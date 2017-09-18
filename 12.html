@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta charset="utf-8">
+<title>菜鸟教程(runoob.com)</title>
+<style type="text/css">
+.allGoods_drapdown li{
+	width:20px;
+	
+}
+#l1{
+	width: 100px;
+}
+</style>
+</head>
+
+<body>
+
+<p>该实例演示了如何使用 addEventListener()方法 向 body 元素中添加 "onhashchange" 事件。</p>
+<p>点击按钮修改当前 URL 的锚部分为 #part5</p>
+<button onclick="changePart()">点我</button>
+<p id="demo"></p>
+
+<ul>
+	<li id="l1"><a href="">fjakfjaklfjalkfjaklfjakl</a>
+		
+		<ul class="allGoods_drapdown" style="display: none;">
+          <li><a href="">test1</a></li>
+          <li><a href="">test2</a></li>
+          <li><a href="">test3</a></li>
+          <li><a href="">test4</a></li>
+          <li><a href="">test5</a></li>
+          <li><a href="">test6</a></li>
+        </ul>
+		
+	</li>
+</ul>
+
+<script src="js/jquery-1.11.0.js" type="text/javascript" charset="utf-8"></script>
+<script>
+// 使用 location.hash 属性来修改锚部分，我理解地址栏的路径，也理解为路由
+function changePart() {
+location.hash = "part5";//改变当前地址栏的url，添加了路由part5，为防止浏览器全局渲染，只渲染对应的部分
+var x = "锚部分现在为: " + location.hash;
+document.getElementById("demo").innerHTML = x;
+}
+
+
+window.addEventListener("hashchange", myFunction);//监听hash改变事件，并调用函数
+//change page anything
+function myFunction() {
+console.log("路由已修改！");
+}
+
+</script>
+<script type="text/javascript">
+	$("#l1").hover(function(){
+		$(".allGoods_drapdown").toggle()
+	})
+</script>
+</body>
+
+</html>

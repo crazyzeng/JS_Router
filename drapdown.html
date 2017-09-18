@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+	<html>
+
+	<head>
+		<meta charset="utf-8">
+		<title>无标题文档</title>
+		<style type="text/css">
+			div,
+			ul,
+			span,
+			li {
+			    padding: 0;
+			    margin: 0;
+			}
+			
+			.nav {
+			    width: 960px;
+			    background-color: #FF519D;
+			    height: 30px;
+			}
+			.nav ul li {
+			    float: left;
+			    list-style-type: none;
+			    width: 80px;
+			}
+			.nav ul li a {
+			    color: #FFF;
+			    text-decoration: none;
+			    display: block;
+			}
+			.nav ul li a:hover {
+			    color: #FFF;
+			    background-color: #FFA7CD;
+			}
+			.nav li {
+			    line-height: 30px;
+			    text-align: center;
+			}
+			.nav ul li span{
+				display: none;
+				text-decoration: none;
+				position: absolute;
+				width: 80px;
+			}
+			.nav span ul li a{
+				background-color: #FF0000;
+			}
+			.nav ul li:hover span {
+				display: block;
+				text-decoration: none;
+			}
+        </style>
+	</head>
+
+	<body>
+		<div id="sunav" class="nav">
+			<ul>
+				<li class="sunav"><a href="#">首页</a>
+					<span>
+						<ul>
+							<li><a href="#">首页</a></li>
+							<li><a href="#">下拉列表1</a></li>
+							<li><a href="#">下拉列表2</a></li>
+						</ul>
+					</span>
+				</li>
+				<li class="sunav"><a href="#">下拉列表1</a>
+					<span>
+						<ul>
+							<li><a href="#">首页</a></li>
+							<li><a href="#">下拉列表1</a></li>
+							<li><a href="#">下拉列表2</a></li>
+						</ul>
+					</span>
+				</li>
+				<li class="sunav"><a href="#">下拉列表2</a>
+					<span>
+						<ul>
+							<li><a href="#">首页</a></li>
+							<li><a href="#">下拉列表1</a></li>
+							<li><a href="#">下拉列表2</a></li>
+						</ul>
+					</span>
+				</li>
+			</ul>
+		</div>
+		<div class="nav">
+			<ul>
+				<li class="sunav"><a href="#">首页</a>
+					<span>
+						<ul>
+							<li><a href="#">首页</a></li>
+							<li><a href="#">下拉列表1</a></li>
+							<li><a href="#">下拉列表2</a></li>
+						</ul>
+					</span>
+				</li>
+				<li class="sunav"><a href="#">下拉列表1</a>
+					<span>
+						<ul>
+							<li><a href="#">首页</a></li>
+							<li><a href="#">下拉列表1</a></li>
+							<li><a href="#">下拉列表2</a></li>
+						</ul>
+					</span>
+				</li>
+				<li class="sunav"><a href="#">下拉列表2</a>
+					<span>
+						<ul>
+							<li><a href="#">首页</a></li>
+							<li><a href="#">下拉列表1</a></li>
+							<li><a href="#">下拉列表2</a></li>
+						</ul>
+					</span>
+				</li>
+			</ul>
+		</div>
+	</body>
+
+</html>
